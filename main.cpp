@@ -76,6 +76,10 @@ int EDA_TYPE;
 //The number of clusters to learn in the mixture.
 int NUM_CLUSTERS;
 
+int SELECTION_PRESSURE;
+int POPULATION_SIZE;
+
+
 
 /*
  * Get next command line option and parameter
@@ -196,6 +200,8 @@ void usage(char *progname)
     cout <<"   -l Name of the file to store the logs.\n"<<endl;
     cout <<"   -p Name of the file to store the logs of the theta averages.\n"<<endl;
     cout <<"   -w Name of the file to store the logs of the weights of the clusters.\n"<<endl;
+    cout <<"   -r Selection pressure.\n"<<endl;
+    cout <<"   -z Population Size .\n"<<endl;
 }
 
 /*
@@ -211,7 +217,7 @@ bool GetParameters(int argc,char * argv[])
     }
 	char** optarg;
 	optarg = new char*[argc];
-    while ((c = GetOption (argc, argv, "s:h:t:o:i:m:d:v:x:k:l:w:p:",optarg)) != '\0')
+    while ((c = GetOption (argc, argv, "s:h:t:o:i:m:d:v:x:k:l:w:p:r:z:",optarg)) != '\0')
     {
     	switch (c)
     	{
@@ -267,6 +273,14 @@ bool GetParameters(int argc,char * argv[])
                 
             case 'w':
                 strcpy(WEIGHTS_LOG_FILENAME, *optarg);
+                break;
+
+            case 'r':
+                SELECTION_PRESSURE=atoi(*optarg);
+                break;
+            
+            case 'z':
+                POPULATION_SIZE=atoi(*optarg);
                 break;
         }
     }
@@ -424,8 +438,8 @@ int main(int argc, char * argv[])
         
     }
     else if (EDA_TYPE==2){
-        cout<<"Kernels Ranking EDA..."<<endl;
-        KernelRankingEDA * alg= new KernelRankingEDA(PROBLEM, PROBLEM_SIZE,MAX_EVALUATIONS,MODEL_TYPE,METRIC_TYPE,INVERSE,  LOG_FILENAME, THETAS_LOG_FILENAME);
+        // cout<<"Kernels Ranking EDA..."<<endl;
+        KernelRankingEDA * alg= new KernelRankingEDA(PROBLEM, PROBLEM_SIZE,MAX_EVALUATIONS,MODEL_TYPE,METRIC_TYPE,INVERSE,  LOG_FILENAME, THETAS_LOG_FILENAME, POPULATION_SIZE, SELECTION_PRESSURE);
         alg->Run();
         //Get best solution fitness and the number of evaluations performed.
         evaluations = alg->GetPerformedEvaluations();

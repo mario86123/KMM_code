@@ -1,0 +1,885 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Mon Aug 29 15:34:38 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+LC_CTYPE = UTF-8
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/huangbowei/Downloads/GECCO2015-master/code
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_CWD = /Users/huangbowei/Downloads/GECCO2015-master/code
+# environment
+PATH = /Users/huangbowei/.pyenv/shims:/Users/huangbowei/.pyenv/bin:/opt/anaconda3/bin:/opt/anaconda3/condabin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/usr/local/bin:/usr/local/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+PYENV_ROOT = /Users/huangbowei/.pyenv
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.uHbMzgDF4T/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+CONDA_EXE = /opt/anaconda3/bin/conda
+# environment
+PWD = /Users/huangbowei/Downloads/GECCO2015-master/code
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PYENV_SHELL = zsh
+# environment
+HOME = /Users/huangbowei
+# default
+ 
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/huangbowei/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = huangbowei
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
+# environment
+ZSH = /Users/huangbowei/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+CONDA_DEFAULT_ENV = base
+# environment
+XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
+# makefile (from `Makefile', line 1)
+CC = g++ -O2 -Wno-deprecated
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = huangbowei
+# makefile
+.DEFAULT_GOAL := all
+# default
+MAKECMDGOALS := all
+# environment
+TERM_SESSION_ID = w0t0p0:267A28CA-7E9B-414F-B7A6-D157150343F4
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+CONDA_SHLVL = 1
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/rc/zpdmpbxj51s2h6f4sl2rwd940000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/huangbowei/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 3.4.16
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.13140286.13140292.BB9F55C3-D10A-47E1-8657-C8F78FF9201A
+# environment
+LC_TERMINAL_VERSION = 3.4.16
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+ITERM_SESSION_ID = w0t0p0:267A28CA-7E9B-414F-B7A6-D157150343F4
+# environment
+COLORFGBG = 15;0
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+CONDA_PYTHON_EXE = /opt/anaconda3/bin/python
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+_CE_M = 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+CONDA_PREFIX = /opt/anaconda3
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 10113
+# environment
+_CE_CONDA = 
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=86/1024=8%, Rehash=0, Collisions=5/113=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777223, inode 12127087): 114 files, no impossibilities.
+
+# 114 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+NewtonRaphson.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+GeneralizedKendall.o: GeneralizedKendall.cpp GeneralizedKendall.h Tools.h GeneralizedDistance.h NewtonRaphson.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 42):
+	$(CC) -c GeneralizedKendall.cpp
+	
+
+# Not a target:
+KernelRankingEDA.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-29 15:19:02
+#  File has been updated.
+ 
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+PBP.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+GeneralizedCayley.o: GeneralizedCayley.cpp GeneralizedCayley.h Tools.h GeneralizedDistance.h NewtonRaphson.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 45):
+	$(CC) -c GeneralizedCayley.cpp
+	
+
+# Not a target:
+GeneralizedMallowsModel.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+NewtonRaphson.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: RankingEDAsCEC
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+Cayley.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+KernelRankingEDA.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+GeneralizedDistance.o: GeneralizedDistance.cpp GeneralizedDistance.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 48):
+	$(CC) -c GeneralizedDistance.cpp
+	
+
+# Not a target:
+GeneralizedMallowsModel.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+API.o: API.cpp API.h Tools.h PBP.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 87):
+	$(CC) -c API.cpp
+	
+
+# Not a target:
+MixtureRankingEDA.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Cayley.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+LOP.o: LOP.cpp LOP.h Tools.h PBP.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 78):
+	$(CC) -c LOP.cpp
+	
+
+PlackettLuce.o: PlackettLuce.cpp PlackettLuce.h Tools.h Population.h PBP.h RankingModel.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 12):
+	$(CC) -c PlackettLuce.cpp
+	
+
+# Not a target:
+PFSP.h:
+#  Implicit rule search has been done.
+#  Last modified 2015-03-28 00:55:48
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Ulam2.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+RankingModel.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2015-03-28 00:55:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+RankingEDA.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+PFSP.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Ulam2.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+QAP.o: QAP.cpp QAP.h Tools.h PBP.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 81):
+	$(CC) -c QAP.cpp
+	
+
+# Not a target:
+TSP.h:
+#  Implicit rule search has been done.
+#  Last modified 2015-03-28 00:55:38
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Ferrers_diagram2.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Kendall.o: Kendall.cpp Kendall.h Tools.h Distance.h Variables.h NewtonRaphson.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 24):
+	$(CC) -c Kendall.cpp
+	
+
+RankingModel.o: RankingModel.cpp RankingModel.h Population.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 51):
+	$(CC) -c RankingModel.cpp
+	
+
+Individual.o: Individual.cc Individual.h Variables.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	$(CC) -c Individual.cc
+	
+
+# Not a target:
+main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-29 15:15:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Distance.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+TSP.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Ferrers_diagram2.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+MallowsModel.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Ferrers_diagram.o: Ferrers_diagram.cpp Ferrers_diagram.h Generic.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 30):
+	$(CC) -c Ferrers_diagram.cpp
+	
+
+# Not a target:
+RankingEDA.h:
+#  Implicit rule search has been done.
+#  Last modified 2015-03-28 00:55:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+Population.o: Population.cc Population.h Individual.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	$(CC) -c Population.cc
+	
+
+# Not a target:
+Tools.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Distance.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Generic.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+PBP.o: PBP.cpp PBP.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 72):
+	$(CC) -c PBP.cpp
+	
+
+# Not a target:
+MallowsModel.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Individual.cc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+MixtureRankingEDA.h:
+#  Implicit rule search has been done.
+#  Last modified 2015-03-28 00:55:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Tools.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GeneralizedKendall.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+NewtonRaphson.o: NewtonRaphson.cpp NewtonRaphson.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 90):
+	$(CC) -c NewtonRaphson.cpp
+	
+
+KernelRankingEDA.o: KernelRankingEDA.cpp KernelRankingEDA.h PBP.h Individual.h Population.h RankingModel.h MallowsModel.h Tools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 18):
+	$(CC) -c KernelRankingEDA.cpp
+	
+
+# Not a target:
+GeneralizedCayley.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Population.cc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+GeneralizedMallowsModel.o: GeneralizedMallowsModel.cpp GeneralizedMallowsModel.h Individual.h RankingModel.h Population.h GeneralizedCayley.h GeneralizedDistance.h GeneralizedKendall.h Tools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 57):
+	$(CC) -c GeneralizedMallowsModel.cpp
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GeneralizedKendall.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+MixtureRankingEDA.o: MixtureRankingEDA.cpp MixtureRankingEDA.h PBP.h Individual.h Population.h RankingModel.h MallowsModel.h GeneralizedMallowsModel.h Tools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 15):
+	$(CC) -c MixtureRankingEDA.cpp
+	
+
+Cayley.o: Cayley.cpp Cayley.h Tools.h Distance.h Variables.h NewtonRaphson.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 21):
+	$(CC) -c Cayley.cpp
+	
+
+# Not a target:
+GeneralizedDistance.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GeneralizedCayley.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Variables.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+API.h:
+#  Implicit rule search has been done.
+#  Last modified 2015-03-28 00:55:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+LOP.h:
+ 
+#  Implicit rule search has been done.
+#  Last modified 2015-03-28 00:55:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	rm -f core *.o RankingEDAsCEC
+	
+
+# Not a target:
+PlackettLuce.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GeneralizedDistance.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+PFSP.o: PFSP.cpp PFSP.h Tools.h PBP.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 75):
+	$(CC) -c PFSP.cpp
+	
+
+# Not a target:
+API.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Ulam2.o: Ulam2.cpp Ulam2.h Tools.h Distance.h Variables.h Ferrers_diagram2.h NewtonRaphson.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 27):
+	$(CC) -c Ulam2.cpp
+	
+
+# Not a target:
+LOP.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+PlackettLuce.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Generic.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+main.o: main.cpp RankingEDA.h PBP.h PFSP.h LOP.h QAP.h TSP.h API.h MixtureRankingEDA.h KernelRankingEDA.h
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  Last modified 2022-08-20 06:15:05
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := main.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := main.cpp RankingEDA.h PBP.h PFSP.h LOP.h QAP.h TSP.h API.h MixtureRankingEDA.h KernelRankingEDA.h
+# automatic
+# | := 
+# automatic
+# < := main.cpp
+# automatic
+# ^ := main.cpp RankingEDA.h PBP.h PFSP.h LOP.h QAP.h TSP.h API.h MixtureRankingEDA.h KernelRankingEDA.h
+# automatic
+# ? := main.cpp KernelRankingEDA.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  commands to execute (from `Makefile', line 9):
+	$(CC) -c main.cpp
+	
+
+# Not a target:
+QAP.h:
+#  Implicit rule search has been done.
+#  Last modified 2015-03-28 00:55:49
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+TSP.o: TSP.cpp TSP.h Tools.h PBP.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 84):
+	$(CC) -c TSP.cpp
+	
+
+Ferrers_diagram2.o: Ferrers_diagram2.cpp Ferrers_diagram2.h Generic.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 33):
+	$(CC) -c Ferrers_diagram2.cpp
+	
+
+# Not a target:
+Kendall.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+RankingModel.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Individual.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+QAP.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Distance.o: Distance.cpp Distance.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 39):
+	$(CC) -c Distance.cpp
+	
+
+# Not a target:
+Ferrers_diagram.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+MallowsModel.o: MallowsModel.cpp MallowsModel.h Individual.h RankingModel.h Population.h Distance.h Kendall.h Cayley.h Tools.h Ulam2.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 54):
+	$(CC) -c MallowsModel.cpp
+	
+
+# Not a target:
+Kendall.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Population.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+RankingEDAsCEC: main.o PBP.o PFSP.o LOP.o QAP.o TSP.o API.o Tools.o Cayley.o Distance.o Kendall.o GeneralizedKendall.o GeneralizedDistance.o RankingModel.o GeneralizedMallowsModel.o MallowsModel.o Population.o Individual.o RankingEDA.o GeneralizedCayley.o Ferrers_diagram.o Ferrers_diagram2.o Generic.o Ulam2.o NewtonRaphson.o PlackettLuce.o MixtureRankingEDA.o KernelRankingEDA.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-28 14:26:23
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  commands to execute (from `Makefile', line 6):
+	$(CC)  main.o PBP.o PFSP.o LOP.o QAP.o TSP.o API.o Tools.o Cayley.o Distance.o Kendall.o GeneralizedKendall.o GeneralizedDistance.o RankingModel.o GeneralizedMallowsModel.o MallowsModel.o Population.o Individual.o RankingEDA.o GeneralizedCayley.o Ferrers_diagram.o Ferrers_diagram2.o Generic.o Ulam2.o NewtonRaphson.o PlackettLuce.o MixtureRankingEDA.o KernelRankingEDA.o -lstdc++ -lm -o RankingEDAsCEC
+	
+
+RankingEDA.o: RankingEDA.cpp RankingEDA.h MallowsModel.h GeneralizedMallowsModel.h Tools.h PBP.h Population.h RankingModel.h PlackettLuce.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 66):
+	$(CC) -c RankingEDA.cpp
+	
+
+Tools.o: Tools.cpp Tools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 69):
+	$(CC) -c Tools.cpp
+	
+
+# Not a target:
+PBP.h:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2015-03-28 00:55:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+Generic.o: Generic.cpp Generic.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 36):
+	$(CC) -c Generic.cpp
+	
+
+# Not a target:
+Ferrers_diagram.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=90/1024=9%, Rehash=0, Collisions=20/270=7%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Mon Aug 29 15:34:38 2022
+
+ 

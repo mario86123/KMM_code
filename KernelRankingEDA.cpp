@@ -17,7 +17,7 @@
 /*
  * The constructor.
  */
-KernelRankingEDA::KernelRankingEDA(PBP * problem, int problem_size, long int max_evaluations, char * model_type, char * metric_type, int inverse, char * log_filename, char * thetas_log_filename)
+KernelRankingEDA::KernelRankingEDA(PBP * problem, int problem_size, long int max_evaluations, char * model_type, char * metric_type, int inverse, char * log_filename, char * thetas_log_filename, int population_size, int selection_pressure)
 {
     //1. standard initializations
     m_problem=problem;
@@ -26,8 +26,12 @@ KernelRankingEDA::KernelRankingEDA(PBP * problem, int problem_size, long int max
     m_evaluations=0;
     m_convergence_evaluations=0;
     
-    m_pop_size=m_problem_size*2;
-    m_sel_size=m_pop_size/2;
+
+    m_pop_size=population_size;
+    printf("m_pop_size: %d\n", m_pop_size);
+    // m_pop_size=m_problem_size*10;
+    m_sel_size=m_pop_size/selection_pressure;
+    printf("m_sel_size: %d\n", m_sel_size);
     m_offspring_size= m_pop_size-1;
     
     m_kernel_num=m_sel_size;

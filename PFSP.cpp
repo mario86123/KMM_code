@@ -109,7 +109,7 @@ double PFSP::Evaluate(int * genes)
 
 int PFSP::Read(string filename)
 {
-    cout<<"reading..."<<endl;
+    // cout<<"reading..."<<endl;
 	bool readMatrix=false;
 	bool readDimension=false;
 

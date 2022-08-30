@@ -1,0 +1,34 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/huangbowei/Downloads/GECCO2015-master/code'
+g++ -O2 -Wno-deprecated -c main.cpp
+g++ -O2 -Wno-deprecated -c PBP.cpp
+g++ -O2 -Wno-deprecated -c PFSP.cpp
+g++ -O2 -Wno-deprecated -c LOP.cpp
+g++ -O2 -Wno-deprecated -c QAP.cpp
+g++ -O2 -Wno-deprecated -c TSP.cpp
+g++ -O2 -Wno-deprecated -c API.cpp
+g++ -O2 -Wno-deprecated -c Tools.cpp
+ 
+g++ -O2 -Wno-deprecated -c Cayley.cpp
+g++ -O2 -Wno-deprecated -c Distance.cpp
+g++ -O2 -Wno-deprecated -c Kendall.cpp
+g++ -O2 -Wno-deprecated -c GeneralizedKendall.cpp
+g++ -O2 -Wno-deprecated -c GeneralizedDistance.cpp
+g++ -O2 -Wno-deprecated -c RankingModel.cpp
+g++ -O2 -Wno-deprecated -c GeneralizedMallowsModel.cpp
+g++ -O2 -Wno-deprecated -c MallowsModel.cpp
+g++ -O2 -Wno-deprecated -c Population.cc
+g++ -O2 -Wno-deprecated -c Individual.cc
+g++ -O2 -Wno-deprecated -c RankingEDA.cpp
+g++ -O2 -Wno-deprecated -c GeneralizedCayley.cpp
+g++ -O2 -Wno-deprecated -c Ferrers_diagram.cpp
+g++ -O2 -Wno-deprecated -c Ferrers_diagram2.cpp
+g++ -O2 -Wno-deprecated -c Generic.cpp
+g++ -O2 -Wno-deprecated -c Ulam2.cpp
+g++ -O2 -Wno-deprecated -c NewtonRaphson.cpp
+g++ -O2 -Wno-deprecated -c PlackettLuce.cpp
+g++ -O2 -Wno-deprecated -c MixtureRankingEDA.cpp
+g++ -O2 -Wno-deprecated -c KernelRankingEDA.cpp
+g++ -O2 -Wno-deprecated  main.o PBP.o PFSP.o LOP.o QAP.o TSP.o API.o Tools.o Cayley.o Distance.o Kendall.o GeneralizedKendall.o GeneralizedDistance.o RankingModel.o GeneralizedMallowsModel.o MallowsModel.o Population.o Individual.o RankingEDA.o GeneralizedCayley.o Ferrers_diagram.o Ferrers_diagram2.o Generic.o Ulam2.o NewtonRaphson.o PlackettLuce.o MixtureRankingEDA.o KernelRankingEDA.o -lstdc++ -lm -o RankingEDAsCEC
+make: Leaving directory `/Users/huangbowei/Downloads/GECCO2015-master/code'
+ 

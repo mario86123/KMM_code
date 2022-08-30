@@ -138,10 +138,12 @@ public:
      * Increase rate of the temperature.
      */
     double m_increase_rate;
+
+
     /*
      * The constructor.
      */
-    KernelRankingEDA(PBP * problem, int problem_size, long int max_evaluations, char * model_type, char * metric_type, int inverse, char * log_filename, char * thetas_log_filename);
+    KernelRankingEDA(PBP * problem, int problem_size, long int max_evaluations, char * model_type, char * metric_type, int inverse, char * log_filename, char * thetas_log_filename, int populaiton_size, int selection_pressure);
     
     /*
      * The destructor.
