@@ -48,13 +48,23 @@ int LOP::Read(string filename)
 		string sline;
 		ss << line;
 		ss >> sline;
+		// cout << "num: " << num  << "sline: " << sline <<  endl;
+
 		if (sline=="")
 		{
 			break;
 		}
 		if (num==0)
 		{
+			num++;
+			continue;
+		}
+		if (num==1)
+		{
+			// cout << "line: " << line <<  endl;
+
 			m_problemsize = atoi(line);
+			// cout << "m_problemsize: " << m_problemsize <<  endl;
 		}
 		else
 		{
@@ -68,14 +78,15 @@ int LOP::Read(string filename)
 	indata.close();
 
 	//BUILD MATRIX
-	m_matrix = new double*[m_problemsize];
+	m_matrix = new int*[m_problemsize];
 	for (int i=0;i<m_problemsize;i++)
 	{
-		m_matrix[i]= new double[m_problemsize];
+		m_matrix[i]= new int[m_problemsize];
 	}
     m_aux= new int[m_problemsize];
     
 	istringstream iss(data);
+	// cout << "data: " << data << endl;
 	int i=0;
 	int j=0;
 	do
@@ -84,9 +95,11 @@ int LOP::Read(string filename)
 	    iss >> sub;
 	    if (sub!=""){
 			//save distance in distances matrix.
-	    	m_matrix[i][j]= atof(sub.c_str());
+			// cout << "i: " << i << ", j: " << j << "sub: " << sub << " ";
+	    	m_matrix[i][j]= atoi(sub.c_str());
 	    	if (j==(m_problemsize-1))
 	    	{
+				// cout << endl;
 	    		i++;
 	    		j=0;
 	    	}
@@ -100,7 +113,17 @@ int LOP::Read(string filename)
 	    	break;
 	    }
 	} while (iss);
-
+  /*
+    for (int i=0;i<m_problemsize;i++){
+        for (int j=0;j<=i;j++){
+            cout<<m_matrix[i][j]-m_matrix[j][i]<<" ";
+        }
+        cout<<endl;
+    }
+    int aux[100]={69,11,39,29,73,84,45,7,15,43,12,31,56,36,77,22,18,61,58,64,40,1,14,46,8,42,16,51,88,48,9,54,35,50,0,80,74,83,70,96,37,20,34,99,91,97,94,32,90,62,81,26,19,10,59,53,86,82,85,25,68,66,92,47,65,33,30,63,79,98,41,71,2,52,13,44,75,57,93,49,4,23,78,38,87,21,89,17,27,55,28,72,5,3,6,60,67,24,95,76};
+    cout<<Evaluate(aux)<<endl;exit(1);*/
+	// cout << "here !!!" << endl;
+	// PrintMatrix(m_matrix, m_problemsize);
 	return (m_problemsize);
 }
 
@@ -110,13 +133,12 @@ int LOP::Read(string filename)
 double LOP::EvaluateInv(int * genes)
 {
     Invert(genes,m_problemsize,m_aux); //original
-    double fitness=0;
-
-	
+	double fitness=0;
     int i,j;
 	for (i=0;i<m_problemsize-1;i++)
 		for (j=i+1;j<m_problemsize;j++)
 			fitness+= m_matrix[m_aux[i]][m_aux[j]];
+
 	return fitness;
 }
 
@@ -127,9 +149,11 @@ double LOP::Evaluate(int * genes)
 {
 	double fitness=0;
     int i,j;
-	for (i=0;i<m_problemsize-1;i++)
-		for (j=i+1;j<m_problemsize;j++)
-			fitness+=(double) m_matrix[genes[i]][genes[j]];
+	for (i=0;i<m_problemsize-1;i++) {
+		for (j=i+1;j<m_problemsize;j++) {
+			fitness+= m_matrix[genes[i]][genes[j]];
+		}
+	}
 	return fitness;
 }
 
@@ -140,62 +164,3 @@ int LOP::GetProblemSize()
 {
     return m_problemsize;
 }
-
-/*
- * Calculates the exact Boltzmann distribution for the LOP.
- */
-double * LOP::Calculate_BoltzmannDistribution(double c){
-    
-  /*  int num_permus=factorial(m_problemsize);
-    double * boltzmann_distribution= new double[num_permus];
-
-    //calculate the normalization constant by bruteforce.
-    double Z_2=0;
-    int p1[m_problemsize];
-    for (int i=0;i<m_problemsize;i++){
-        p1[i]=i;
-    }
-    sort(p1,p1+m_problemsize);
-
-    double eval=0;
-    int index=0;
-    do{
-        eval=(double)Evaluate(p1)/c;
-        Z_2 += exp(eval);
-        boltzmann_distribution[index] =  exp(eval);
-        index++;
-    }
-    while ( next_permutation (p1,p1+m_problemsize) );
-
-    //calculate the boltzmann distribution.
-    for (int i=0;i<num_permus;i++){
-        boltzmann_distribution[i]=boltzmann_distribution[i]/Z_2;
-        
-    }
-    return boltzmann_distribution;*/
-    return 0;
-}
-
-double LOP::Contribution(int * solution, int item, int position){
-    double contribution=0;
-    int i;
-    for (i=0;i<position;i++){
-        contribution+=m_matrix[solution[i]][item];
-
-    }
-    for (i=position+1;i<m_problemsize;i++){
-        contribution+=m_matrix[item][solution[i]];
-    }
-//    cout<<contribution<<"item: "<<item<<" pos: "<<position<<endl;
-
-    return contribution;
-}
-
-
-
-
-
-
-
-
-

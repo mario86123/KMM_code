@@ -40,7 +40,7 @@ public:
     /*
      * Matrix of distances between the cities.
      */
-	double ** m_distance_matrix;
+	int ** m_distance_matrix;
 	
 	/*
 	 * The number of cities.
