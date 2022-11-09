@@ -32,6 +32,12 @@ TSP::~TSP()
 
 double CalculateGEODistance(double latitudeX, double latitudeY, double longitudeX, double longitudeY)
 {
+
+	// printf("laX: %.2lf\n", latitudeX);
+	// printf("laY: %.2lf\n", latitudeY);
+	// printf("loX: %.2lf\n", longitudeX);
+	// printf("loY: %.2lf\n", longitudeY);
+
 	double PI = 3.141592;
 	double RRR = 6378.388;
 	
@@ -61,7 +67,7 @@ double CalculateGEODistance(double latitudeX, double latitudeY, double longitude
 /*
  * Read TSP instance file that belongs to the TSPLIB library.
  */
-int TSP::Read2(string filename)
+int TSP::Read(string filename)
 {
     //declaration and initialization of variables.
 	bool readm_distance_matrix=false;
@@ -156,10 +162,10 @@ int TSP::Read2(string filename)
 	indata.close();
 	
 	//BUILD DISTANCE m_distance_matrix
-	m_distance_matrix = new double*[m_size];
+	m_distance_matrix = new int*[m_size];
 	for (int i=0;i<m_size;i++)
 	{
-		m_distance_matrix[i]= new double[m_size];
+		m_distance_matrix[i]= new int[m_size];
 	}
 	
 	//FILL DISTANCE m_distance_matrix
@@ -189,9 +195,14 @@ int TSP::Read2(string filename)
 					//calculate euclidean distance between A and B.
 					double absolute= fabs(pow((coordAx-coordBx),2) + pow((coordAy-coordBy),2));
 					euclidean= sqrt(absolute);
-                }
-				m_distance_matrix[i][j]=  euclidean;
-				m_distance_matrix[j][i]= euclidean;//<-symmetric m_distance_matrix
+				}
+				//convert double to string
+				std::ostringstream stream;
+				stream << euclidean;
+				std::string euclideanString = stream.str();
+
+				m_distance_matrix[i][j]=  (int)euclidean;
+				m_distance_matrix[j][i]= (int)euclidean;//<-symmetric m_distance_matrix
 			}
 		}
 	}
@@ -235,7 +246,7 @@ int TSP::Read2(string filename)
 /*
  * Read TSP instance file.
  */
-int TSP::Read(string filename)
+int TSP::Read2(string filename)
 {
 	char line[2048]; // variable for input value
 	string data="";
@@ -244,6 +255,7 @@ int TSP::Read(string filename)
 	int num=0;
 	while (!indata.eof())
 	{
+        
 		indata.getline(line, 2048);
 		stringstream ss;
 		string sline;
@@ -269,10 +281,10 @@ int TSP::Read(string filename)
 	indata.close();
     
 	//BUILD MATRIX
-	m_distance_matrix = new double*[m_size];
+	m_distance_matrix = new int*[m_size];
 	for (int i=0;i<m_size;i++)
 	{
-		m_distance_matrix[i]= new double[m_size];
+		m_distance_matrix[i]= new int[m_size];
 	}
     m_aux= new int[m_size];
     
@@ -310,7 +322,7 @@ int TSP::Read(string filename)
 double TSP::Evaluate(int * genes)
 {
 	double distanceSum=0;
-	double distAB=0;
+	int distAB=0;
 	int IDCityA, IDCityB;
 	for (int i=0;i<m_size;i++)
 	{
@@ -322,6 +334,7 @@ double TSP::Evaluate(int * genes)
 		}
 		
 		distAB = m_distance_matrix[IDCityA][IDCityB];
+		
 		distanceSum=distanceSum+distAB;
 		
 		//security condition
@@ -340,7 +353,7 @@ double TSP::EvaluateInv(int * genes){
     Invert(genes, m_size, m_aux);
     
     double distanceSum=0;
-	double distAB=0;
+	int distAB=0;
 	int IDCityA, IDCityB;
 	for (int i=0;i<m_size;i++)
 	{

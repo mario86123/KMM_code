@@ -39,7 +39,7 @@ public:
     /*
      * Entries matrix of the LOP.
      */
-	double ** m_matrix;
+	int ** m_matrix;
     
 	/*
 	 * The size of the problem.
@@ -77,12 +77,6 @@ public:
      */
     int GetProblemSize();
     
-    /*
-     * Calculates the exact Boltzmann distribution
-     */
-    double * Calculate_BoltzmannDistribution(double beta);
-    
-    double Contribution(int * solution, int item, int position);
 private:
     
 };

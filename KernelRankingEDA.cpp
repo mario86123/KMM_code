@@ -28,10 +28,10 @@ KernelRankingEDA::KernelRankingEDA(PBP * problem, int problem_size, long int max
     
 
     m_pop_size=population_size;
-    printf("m_pop_size: %d\n", m_pop_size);
+    // printf("m_pop_size: %d\n", m_pop_size);
     // m_pop_size=m_problem_size*10;
     m_sel_size=m_pop_size/selection_pressure;
-    printf("m_sel_size: %d\n", m_sel_size);
+    // printf("m_sel_size: %d\n", m_sel_size);
     m_offspring_size= m_pop_size-1;
     
     m_kernel_num=m_sel_size;
